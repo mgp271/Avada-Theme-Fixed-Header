@@ -29,7 +29,7 @@ function avada_header_template( $slider_position = 'Below' ) {
 						get_template_part('framework/headers/header-v4');
 					} elseif(is_page('header-5')) {
 						get_template_part('framework/headers/header-v5');
-					/**MATTSTER CUSTOM HEADER**/
+					/**MATTSTER ADD CUSTOM HEADER**/
 					} elseif(is_page('header-6')) {
 						get_template_part('framework/headers/header-v6');
 					} else {
