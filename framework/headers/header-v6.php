@@ -1,21 +1,11 @@
 <?php global $smof_data; ?>
 <!--MATTSTER ADD CUSTOM HEADER-->
+<!--MATTSTER WRAP HEADER WITH NEW FLEXIBLE CONTAINER-->
 <div class="header-v6-container">
 <div class="header-v6">
 	<?php if($smof_data['header_left_content'] != 'Leave Empty' || $smof_data['header_right_content'] != 'Leave Empty'): ?>
 	<div class="header-social">
 		<div class="avada-row">
-			<div class="alignright">
-				<?php
-				if($smof_data['header_right_content'] == 'Contact Info') {
-					get_template_part('framework/headers/header-info');
-				} elseif($smof_data['header_right_content'] == 'Social Links') {
-					get_template_part('framework/headers/header-social');
-				} elseif($smof_data['header_right_content'] == 'Navigation') {
-					get_template_part('framework/headers/header-menu');
-				}
-				?>
-			</div>
 			<div class="alignleft">
 				<?php
 				if($smof_data['header_left_content'] == 'Contact Info') {
@@ -23,6 +13,17 @@
 				} elseif($smof_data['header_left_content'] == 'Social Links') {
 					get_template_part('framework/headers/header-social');
 				} elseif($smof_data['header_left_content'] == 'Navigation') {
+					get_template_part('framework/headers/header-menu');
+				}
+				?>
+			</div>
+			<div class="alignright">
+				<?php
+				if($smof_data['header_right_content'] == 'Contact Info') {
+					get_template_part('framework/headers/header-info');
+				} elseif($smof_data['header_right_content'] == 'Social Links') {
+					get_template_part('framework/headers/header-social');
+				} elseif($smof_data['header_right_content'] == 'Navigation') {
 					get_template_part('framework/headers/header-menu');
 				}
 				?>
